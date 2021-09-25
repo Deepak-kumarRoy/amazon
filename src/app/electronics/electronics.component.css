@@ -1,0 +1,15 @@
+.card{
+    margin-bottom: 20px;
+    margin-left: 40px;
+    background-color: hsl(0, 12%, 90%);
+}
+
+.card-img-top{
+    margin-left: -12px;
+    width: 286px;
+}
+
+.header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:coral;
+}

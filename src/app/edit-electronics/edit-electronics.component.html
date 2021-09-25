@@ -1,0 +1,23 @@
+<div class="mainbody">
+    <div class="wrapper register">
+        <h1>Edit Electronic Products</h1>
+        <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong> Success!</strong> Product Added Successfully.
+        </div>
+        <div class="reg-box">
+            <form [formGroup]="newData" (ngSubmit)="submit()">
+                <div class="row"><input type="text" class="inputarea" placeholder="Image" formControlName="image">
+                </div>
+                <div class="row"><input type="text" class="inputarea" placeholder="Price" formControlName="price">
+                </div>
+                <div class="row"><input type="text" class="inputarea" placeholder="Text" formControlName="text">
+                </div>
+                <div class="row"><input type="text" class="inputarea" placeholder="Link" formControlName="link">
+                </div>
+                <div class="row"><button type="submit" [class.btn-disabled]="!newData.valid"
+                        class="btns full roundshape" [disabled]="!newData.valid">Update</button></div>
+            </form>
+        </div>
+    </div>
+</div>
+

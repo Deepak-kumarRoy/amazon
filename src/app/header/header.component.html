@@ -1,0 +1,29 @@
+<ng-container *ngIf="user">
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand">M-BLOG</a>
+      <div class="d-flex">
+            <a class="nav-link" routerLink="home">Home</a>
+            <a class="nav-link" routerLink="electronics">Electronics</a>
+            <a class="nav-link" routerLink="login"><i class="far fa-user-circle" style="font-size: 40px;color:black;"></i></a>       
+      </div>
+    </div>
+  </nav>
+</ng-container>
+
+<ng-container *ngIf="admin">
+  <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand">M-BLOG</a>
+        <div class="d-flex">
+              <a class="nav-link" routerLink="add-products">Add Deals</a>
+              <a class="nav-link" routerLink="add-electronics">Add Electronics</a>
+              <a class="nav-link" routerLink="login"><i class="far fa-user-circle" style="font-size: 40px;color:black;"></i></a>       
+        </div>
+      </div>
+    </nav>
+  </ng-container>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

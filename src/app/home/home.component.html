@@ -1,0 +1,15 @@
+<div class="my-3 header text-center">
+  <h1>DEAL OF THE DAY</h1>
+</div>
+<div class="container-fluid my-3">
+  <div class="row">
+    <div class="card" style="width: 18rem;" *ngFor="let item of products">
+      <img src="{{item.image}}" class="card-img-top" alt="..."> 
+      <div class="card-body">
+        <h5 class="card-title">{{item.text}}</h5>
+        <p class="card-text"><i class="fas fa-rupee-sign"></i> &nbsp;{{item.price}}</p>
+        <a href={{item.link}} class="btn btn-warning">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+</div>

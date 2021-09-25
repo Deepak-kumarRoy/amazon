@@ -1,0 +1,12 @@
+.navbar-brand{
+    color: brown;
+    font: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+.nav-link{
+    color: hsl(197, 100%, 50%);
+    font: bold;
+    font-size: 20px;
+}
